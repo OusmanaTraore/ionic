@@ -1,0 +1,60 @@
+<h3> {{equipe}}</h3>
+<ul>
+    <li    li *ngFor="let c of names"> {{c | filtreur}}</li>
+</ul>
+<br>
+
+<div *ngIf="students; then thenBlock else elseBlock"></div>
+ <ng-template #thenBlock>
+
+     <table border='1' align="center">
+         <tr><th>
+             Nom
+            </th>
+            <th>Age</th><th>Email</th></tr>
+            <tr *ngFor="let student of students">
+                <td>{{ student.name | filtreur}}</td>
+                <td>{{ student.age}}</td>
+                <td>{{ student.email}}</td>
+            </tr>
+            <caption align="bottom">Liste de mes étudiants</caption>
+        </table>
+        <button class="btn btn-primary">Cliquez ici</button>
+    </ng-template>
+<ng-template #elseBlock>Liste vide
+
+    <button class="btn btn-danger">Cliquez ici</button>
+</ng-template>
+<!-- <table>
+    <thead>
+        <tr>
+          <th li *ngFor="let c of names"> {{c}}</th>
+        </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td li *ngFor="let s of Candidat"> {{ s}} </td>
+           </tr>
+       </tbody>
+   
+</table> -->
+
+     <!-- <tbody>
+       <tr>
+         <td>text1.1</td>
+         <td>text1.2</td>
+         <td>text1.3</td>
+       </tr>
+       <tr>
+         <td>text2.1</td>
+         <td>text2.2</td>
+         <td>text2.3</td>
+       </tr>
+       <tr>
+         <td>text3.1</td>
+         <td>text3.2</td>
+         <td>text3.3</td>
+       </tr>
+       <tr>
+       </tr>
+    </tbody> -->
