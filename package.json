@@ -1,7 +1,7 @@
 {
   "name": "labangular",
   "version": "1.0.0",
-  "description": "api rest",
+  "description": "api rest node",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
