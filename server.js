@@ -21,7 +21,7 @@ app.listen(
 // connexion de notre serveur à la base mongo
 const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://localhost:27017';
-const dbName = 'monapi';
+const dbName = 'back';
 
 
 let db 
