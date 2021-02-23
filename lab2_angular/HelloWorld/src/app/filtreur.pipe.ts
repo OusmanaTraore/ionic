@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class FiltreurPipe implements PipeTransform {
 
   transform(value: unknown, ...args: unknown[]): unknown {
-    return value + "GK";
+    return value + " GK ";
   }
 
 }
