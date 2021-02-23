@@ -49,7 +49,7 @@ app.get('/equipes', (req,res) => {
           try {
               const docs = await db.collection('equipe').find({id}).toArray()
               res.status(200).json(docs)
-          } catch (err) {
+          } catch (err){
               console.log(err)
               throw err
           }
